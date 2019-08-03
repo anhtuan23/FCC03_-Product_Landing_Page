@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(184, 218, 248);
+  background-color: rgb(208, 231, 252);
   margin: 0;
 }
 
 #header {
   position: sticky;
   top: 0;
-  background-color: rgb(184, 218, 248);
+  background-color: rgb(208, 231, 252);
   width: 100vw;
   height: 80px;
   display: flex;
@@ -22,7 +22,7 @@ body {
   width: auto;
 }
 
-#links {
+#nav-bar {
   display: flex;
   flex-basis: 600px;
   flex-wrap: wrap;
@@ -31,7 +31,7 @@ body {
   align-items: center;
 }
 
-#links a {
+#nav-bar a {
   text-decoration: none;
   min-width: 300px;
   color: black;
@@ -76,18 +76,18 @@ body {
   font-size: 1.3em;
 }
 
-#email-form{
+#form{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#text-input{
+#email{
   padding: 6px;
   min-width: 270px;
 }
 
-#submit-button{
+#submit{
   background-color: rgb(5, 142, 233);
   border: 0;
   padding: 10px 80px;
@@ -106,4 +106,13 @@ body {
   color: gray;
   font-size: 1.2em;
   padding: 10px;
+}
+
+@media (max-width:600px){
+  .introduction-item img{
+    display: none;
+  }
+  .introduction-item{
+    text-align: center;
+  }
 }

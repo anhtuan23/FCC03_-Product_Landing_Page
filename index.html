@@ -10,15 +10,16 @@
 </head>
 
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <div id="header">
     <div id="logo">
-      <img src="images\engnite-logo.png" alt="engnite-logo">
+      <img src="images\engnite-logo.png" alt="engnite-logo" id="header-img">
     </div>
-    <div id="links">
-      <a href="#">Who we are</a>
-      <a href="#">Our students</a>
-      <a href="#">Enroll now</a>
-    </div>
+    <nav id="nav-bar">
+      <a href="#who-we-are" class="nav-link">Who we are</a>
+      <a href="#video" class="nav-link">Our students</a>
+      <a href="#enroll-label" class="nav-link">Enroll now</a>
+    </nav>
   </div>
   <div id="container">
     <img src="images\engnite-banner.jpg" alt="large banner">
@@ -36,22 +37,26 @@
           <img src="images\palette.png" alt="">
           <div class="introduction-text">
             <p class="introduction-item-header">Fun and Creative</p>
-            <p>Vestibulum malesuada imperdiet leo, vel accumsan sem pharetra at. Donec non urna sed purus egestas tincidunt non at risus. Vivamus neque ligula, condimentum vel sollicitudin eget, ultrices aliquet lectus. Nullam vitae sem vel metus lobortis dictum id quis erat.</p>
+            <p>Vestibulum malesuada imperdiet leo, vel accumsan sem pharetra at. Donec non urna sed purus egestas
+              tincidunt non at risus. Vivamus neque ligula, condimentum vel sollicitudin eget, ultrices aliquet lectus.
+              Nullam vitae sem vel metus lobortis dictum id quis erat.</p>
           </div>
         </div>
         <div class="introduction-item">
           <img src="images\auto-fix.png" alt="">
           <div class="introduction-text">
             <p class="introduction-item-header">Outstanding achievement</p>
-            <p>Cras non aliquet neque. Donec rhoncus risus ipsum, eu feugiat velit aliquet et. Cras venenatis sem arcu, vel iaculis felis eleifend sit amet.</p>
+            <p>Cras non aliquet neque. Donec rhoncus risus ipsum, eu feugiat velit aliquet et. Cras venenatis sem arcu,
+              vel iaculis felis eleifend sit amet.</p>
           </div>
         </div>
       </div>
-      <iframe  height="320" src="https://www.youtube.com/embed/8sVJQ8UbniE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="video" height="320" src="https://www.youtube.com/embed/8sVJQ8UbniE" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p id="enroll-label">Start your Journey today, enroll now!</p>
-      <form action="" id="email-form">
-        <input type="text" placeholder="Enter your email" id="text-input">
-        <input type="submit" value="Submit" id="submit-button">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" placeholder="Enter your email" id="email" name="email">
+        <input type="submit" value="Submit" id="submit">
       </form>
     </div>
   </div>
